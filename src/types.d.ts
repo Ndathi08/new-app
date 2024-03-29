@@ -1,3 +1,3 @@
-type NameProps = {
-    name: string;
+type PeopleProps = {
+    people: string;
   }
