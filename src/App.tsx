@@ -4,6 +4,8 @@ import PropDrilling from './Components/PropDrilling';
 import Perfumes from './Components/Perfumes';
 import Login from './Components/Login';
 import Signup from './Components/Signup';
+import { AuthProvider } from './Contexts/AuthContext';
+import Profile from './Components/Profile';
 
 function App() {
   return (
@@ -11,7 +13,13 @@ function App() {
       <PropDrilling/>
       <Perfumes/>
       <Signup/> 
-      <Login/>
+      <AuthProvider>
+      <div>
+      <Profile />
+      <Login />
+        
+      </div>
+    </AuthProvider>
     </div>
   );
 }
